@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg-deep: #00030E;
+    --color-surface-slate: #0B0E1A;
+    --color-surface-plum: #2C1B2F;
+    --color-muted-plum: #5E3A5C;
+    --color-accent-rose: #B47A9A;
+    --color-light-porcelain: #F3E9EC;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #00030E;
+    color: #F3E9EC;
+  }
+  h1, h2, h3, .font-heading {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .font-serif-display {
+    font-family: 'DM Serif Display', 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Engineering tech grid background with user palette */
+.tech-grid-bg {
+  background-image: radial-gradient(rgba(180, 122, 154, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.tech-linear-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(94, 58, 92, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(94, 58, 92, 0.12) 1px, transparent 1px);
+}
+
+/* High-contrast Hero Grid layout styling aligned to palette */
+.hero-grid {
+  background-color: #00030E;
+  background-size: 48px 48px;
+  background-image:
+    linear-gradient(to right, rgba(94, 58, 92, 0.16) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(94, 58, 92, 0.16) 1px, transparent 1px);
+}
+
+.hero-grid-dots {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(180, 122, 154, 0.22) 1.2px, transparent 1.2px);
+}
+
+@keyframes dynamic-glow-pulse {
+  0%, 100% {
+    opacity: 0.45;
+    transform: scale(1) translate(0, 0);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.1) translate(10px, -6px);
+  }
+}
+
+.animate-dynamic-glow {
+  animation: dynamic-glow-pulse 6s ease-in-out infinite alternate;
+}
+
+/* Custom subtle scrollbar with palette colors */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #00030E;
+}
+::-webkit-scrollbar-thumb {
+  background: #2C1B2F;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5E3A5C;
+}
+
