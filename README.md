@@ -1,5 +1,3 @@
-Portfólio
-
 Portfólio pessoal desenvolvido por Ana Paula Deon.
 
 ## Como rodar o projeto
