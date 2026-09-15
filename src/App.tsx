@@ -12,7 +12,6 @@ import { Navbar } from './components/Navbar';
 import { ProfileCard } from './components/ProfileCard';
 import { ProjectCard } from './components/ProjectCard';
 import { ProjectModal } from './components/ProjectModal';
-import { ResearchSection } from './components/ResearchSection';
 import { SkillsSection } from './components/SkillsSection';
 import { HowICanHelpSection } from './components/HowICanHelpSection';
 import { ContactSection } from './components/ContactSection';
@@ -56,7 +55,6 @@ export default function App() {
       'habilidades',
       'projetos',
       'como-posso-ajudar',
-      'pesquisa',
       'formacao',
       'aprendizados',
       'objetivos',
@@ -239,12 +237,7 @@ export default function App() {
         <HowICanHelpSection onContactClick={() => scrollToSection('contato')} />
 
         {/* ========================================================
-            08. PESQUISA EM ANDAMENTO (Interactive Accessibility)
-        ======================================================== */}
-        <ResearchSection />
-
-        {/* ========================================================
-            09. FORMAÇÃO
+            08. FORMAÇÃO
         ======================================================== */}
         <section
           id="formacao"

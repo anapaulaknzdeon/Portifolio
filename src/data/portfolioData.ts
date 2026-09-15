@@ -45,7 +45,7 @@ export const PORTFOLIO_INFO = {
   course: 'Bacharelado em Ciência da Computação',
   email: 'anapaulaknzdeon@gmail.com',
   github: 'https://github.com',
-  linkedin: 'https://linkedin.com',
+  linkedin: 'https://www.linkedin.com/in/anapauladeon',
   status: 'Disponível para projetos acadêmicos e oportunidades',
   year: '2026',
   bioIntro:
