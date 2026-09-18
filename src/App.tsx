@@ -43,7 +43,19 @@ export default function App() {
   const scrollToSection = (sectionId: string) => {
     const el = document.getElementById(sectionId);
     if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
+      const navOffset = 64;
+      const elementPosition = el.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      try {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } catch {
+        // fallback
+      }
     }
   };
 

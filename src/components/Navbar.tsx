@@ -85,14 +85,15 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => 
 
         {/* Action Buttons */}
         <div className="flex items-center gap-3">
-          <button
+          <a
             id="nav-cta-talk-btn"
-            onClick={() => onNavigate('contato')}
+            href={`mailto:${PORTFOLIO_INFO.email}`}
             className="hidden sm:inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#B47A9A] hover:bg-[#c68dae] text-[#00030E] font-bold text-xs tracking-wide transition-all duration-200 shadow-md shadow-[#B47A9A]/30 active:scale-95 cursor-pointer"
+            title={`Enviar e-mail para ${PORTFOLIO_INFO.email}`}
           >
             <span>Fale comigo</span>
-            <ArrowUpRight className="w-3.5 h-3.5" />
-          </button>
+            <Mail className="w-3.5 h-3.5" />
+          </a>
 
           {/* Mobile menu trigger */}
           <button
@@ -136,15 +137,15 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => 
           </div>
 
           <div className="pt-3 border-t border-[#5E3A5C]/40 flex flex-col gap-2">
-            <button
-              onClick={() => {
-                onNavigate('contato');
-                setMobileMenuOpen(false);
-              }}
-              className="w-full py-2.5 rounded-full bg-[#B47A9A] hover:bg-[#c68dae] text-[#00030E] font-bold text-xs tracking-wide transition-all text-center shadow-md shadow-[#B47A9A]/30"
+            <a
+              href={`mailto:${PORTFOLIO_INFO.email}`}
+              onClick={() => setMobileMenuOpen(false)}
+              className="w-full py-2.5 rounded-full bg-[#B47A9A] hover:bg-[#c68dae] text-[#00030E] font-bold text-xs tracking-wide transition-all text-center shadow-md shadow-[#B47A9A]/30 flex items-center justify-center gap-1.5"
+              title={`Enviar e-mail para ${PORTFOLIO_INFO.email}`}
             >
-              Fale comigo
-            </button>
+              <span>Fale comigo</span>
+              <Mail className="w-3.5 h-3.5" />
+            </a>
             <button
               onClick={handleCopyEmail}
               className="flex items-center justify-center gap-2 w-full py-2 rounded-lg bg-[#2C1B2F]/60 border border-[#5E3A5C]/40 text-xs text-[#F3E9EC]/80"
