@@ -34,11 +34,10 @@ export const ContactSection: React.FC = () => {
         <div className="max-w-xl mx-auto space-y-4">
           {/* Email Card with 1-click copy */}
           <div className="p-6 rounded-2xl bg-[#0B0E1A]/80 border border-[#5E3A5C]/40 hover:border-[#B47A9A]/50 transition-colors">
-            <div className="flex items-center justify-between mb-3">
+            <div className="mb-3">
               <span className="text-xs font-mono uppercase tracking-wider text-[#F3E9EC]/60">
                 E-mail Oficial
               </span>
-              <span className="text-[10px] font-mono text-[#B47A9A]">Resposta Rápida</span>
             </div>
             <div className="flex items-center justify-between gap-2 p-3 bg-[#00030E] rounded-xl border border-[#5E3A5C]/40">
               <span className="font-mono text-xs text-[#F3E9EC] truncate select-all">

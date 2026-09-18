@@ -172,14 +172,14 @@ export default function App() {
                       <Instagram className="w-4 h-4" />
                     </a>
 
-                    <button
+                    <a
                       id="social-email"
-                      onClick={() => scrollToSection('contato')}
-                      title="Enviar E-mail"
-                      className="p-2.5 text-[#F3E9EC]/60 hover:text-[#B47A9A] hover:bg-[#2C1B2F]/40 rounded-full transition-colors active:scale-95 cursor-pointer"
+                      href={`mailto:${PORTFOLIO_INFO.email}`}
+                      title={`Enviar E-mail (${PORTFOLIO_INFO.email})`}
+                      className="p-2.5 text-[#F3E9EC]/60 hover:text-[#B47A9A] hover:bg-[#2C1B2F]/40 rounded-full transition-colors active:scale-95"
                     >
                       <Mail className="w-4 h-4" />
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -207,7 +207,7 @@ export default function App() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
             <div>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-[#F3E9EC] font-heading tracking-tight">
-                Projetos & Aplicações
+                Projetos e Aplicações
               </h2>
               <p className="text-sm text-[#F3E9EC]/70 mt-2 max-w-2xl">
                 Soluções construídas aplicando lógica estruturada, design centrado no usuário e tecnologias web modernas.
@@ -330,9 +330,6 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-3">
-              <div className="w-7 h-7 rounded-md bg-[#2C1B2F] border border-[#5E3A5C]/50 flex items-center justify-center font-mono font-bold text-xs text-[#B47A9A]">
-                AP
-              </div>
               <div className="text-xs text-[#F3E9EC]/70">
                 <span className="font-semibold text-[#F3E9EC]">Ana Paula</span> — Portfólio de Tecnologia & Desenvolvimento
               </div>

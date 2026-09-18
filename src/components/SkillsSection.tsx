@@ -8,7 +8,7 @@ export const SkillsSection: React.FC = () => {
         {/* Section Header */}
         <div className="mb-12 max-w-2xl">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#F3E9EC] font-heading tracking-tight">
-            Stack Tecnológica & Habilidades
+            Stack Tecnológica e Habilidades
           </h2>
           <p className="text-sm text-[#F3E9EC]/70 mt-2">
             Conjunto de ferramentas técnicas e competências comportamentais consolidadas.
@@ -21,7 +21,7 @@ export const SkillsSection: React.FC = () => {
           <div>
             <div className="mb-5">
               <h3 className="text-sm font-mono uppercase tracking-wider text-[#F3E9EC]/90 font-semibold">
-                Tecnologias & Ferramentas
+                Tecnologias e Ferramentas
               </h3>
             </div>
 
