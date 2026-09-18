@@ -204,18 +204,13 @@ export default function App() {
           id="projetos"
           className="py-24 border-t border-[#5E3A5C]/40 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-16"
         >
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#F3E9EC] font-heading tracking-tight">
-                Projetos e Aplicações
-              </h2>
-              <p className="text-sm text-[#F3E9EC]/70 mt-2 max-w-2xl">
-                Soluções construídas aplicando lógica estruturada, design centrado no usuário e tecnologias web modernas.
-              </p>
-            </div>
-            <span className="text-xs font-mono text-[#B47A9A]">
-              Clique em qualquer card para abrir o simulador
-            </span>
+          <div className="mb-12">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#F3E9EC] font-heading tracking-tight">
+              Projetos e Aplicações
+            </h2>
+            <p className="text-sm text-[#F3E9EC]/70 mt-2 max-w-2xl">
+              Soluções construídas aplicando lógica estruturada, design centrado no usuário e tecnologias web modernas.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
@@ -257,11 +252,10 @@ export default function App() {
                 className="p-7 rounded-2xl bg-[#0B0E1A]/70 border border-[#5E3A5C]/40 flex flex-col justify-between"
               >
                 <div>
-                  <div className="flex items-center justify-between mb-3">
+                  <div className="mb-3">
                     <span className="font-mono text-xs text-[#B47A9A] font-semibold px-2.5 py-1 rounded bg-[#2C1B2F] border border-[#5E3A5C]/50">
                       {edu.period}
                     </span>
-                    <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
                   </div>
 
                   <h3 className="text-xl font-bold text-[#F3E9EC] font-heading mb-1.5">
