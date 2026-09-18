@@ -3,7 +3,6 @@ import {
   PORTFOLIO_INFO,
   PROJECTS,
   EDUCATION_DATA,
-  LEARNING_SOFT_SKILLS,
   FUTURE_GOALS,
   Project
 } from './data/portfolioData';
@@ -56,7 +55,6 @@ export default function App() {
       'projetos',
       'como-posso-ajudar',
       'formacao',
-      'aprendizados',
       'objetivos',
       'contato'
     ];
@@ -245,7 +243,7 @@ export default function App() {
         >
           <div className="mb-12 max-w-2xl">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#F3E9EC] font-heading tracking-tight">
-              Educação & Programas
+              Educação e Programas
             </h2>
             <p className="text-sm text-[#F3E9EC]/70 mt-2">
               Bases sólidas construídas em instituição pública federal de referência e programas de liderança feminina em tecnologia.
@@ -284,43 +282,7 @@ export default function App() {
         </section>
 
         {/* ========================================================
-            10. APRENDIZADOS (Soft Skills no dia a dia)
-        ======================================================== */}
-        <section
-          id="aprendizados"
-          className="py-24 border-t border-[#5E3A5C]/40 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-16"
-        >
-          <div className="mb-12 max-w-2xl">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#F3E9EC] font-heading tracking-tight">
-              Pilares Comportamentais
-            </h2>
-            <p className="text-sm text-[#F3E9EC]/70 mt-2">
-              Valores humanos e atitudes essenciais cultivadas na convivência acadêmica e profissional.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {LEARNING_SOFT_SKILLS.map((item, idx) => (
-              <div
-                key={idx}
-                className="p-6 rounded-2xl bg-[#0B0E1A]/70 border border-[#5E3A5C]/40 hover:border-[#B47A9A]/50 transition-colors"
-              >
-                <span className="font-mono text-xs font-semibold text-[#B47A9A] mb-2 block">
-                  0{idx + 1}
-                </span>
-                <h3 className="text-base font-bold text-[#F3E9EC] font-heading mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-xs text-[#F3E9EC]/70 leading-relaxed">
-                  {item.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* ========================================================
-            11. OBJETIVOS
+            09. OBJETIVOS
         ======================================================== */}
         <section
           id="objetivos"
